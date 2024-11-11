@@ -1,0 +1,30 @@
+{
+  "name": "villa_caquito",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "embla-carousel-react": "^8.3.1",
+    "flowbite-react": "^0.10.2",
+    "next": "^15.0.0",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.15.0",
+    "react-dom": "^18.3.1",
+    "react-social-icons": "^6.18.0",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
