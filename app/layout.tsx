@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/molecules/navBar";
+import NavBarMobile from "@/components/molecules/navBarMobile";
 import MyFooter from "@/components/atoms/footer";
 
 const geistSans = localFont({
@@ -31,7 +32,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{scrollBehavior: "smooth"}}
       >
-        <NavBar />
+        <div className="hidden md:block"><NavBar /></div>
+        <div className="md:hidden"><NavBarMobile /></div>
         {children}
         <MyFooter />
       </body>
