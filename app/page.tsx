@@ -7,19 +7,18 @@ import PricesViewCel from "@/components/molecules/pricesViewCel";
 import Image from "next/image";
 
 const images = [
-  '/pool.jpg',
-  '/Caquito.png',
-  '/slide2.jpg',
-  '/slide3.jpg',
-  '/slide4.jpg',
-  '/slide5.jpg',
-  '/slide6.jpg',
-  '/slide7.jpg',
-  '/slide8.jpg',
-  '/slide9.jpg',
-  '/slide10.jpg',
-  '/slide11.jpg',
-  '/slide12.jpg'
+  '/slideshow/Caquito.png',
+  '/slideshow/slide2.jpg',
+  '/slideshow/slide3.jpg',
+  '/slideshow/slide4.jpg',
+  '/slideshow/slide5.jpg',
+  '/slideshow/slide6.jpg',
+  '/slideshow/slide7.jpg',
+  '/slideshow/slide8.jpg',
+  '/slideshow/slide9.jpg',
+  '/slideshow/slide10.jpg',
+  '/slideshow/slide11.jpg',
+  '/slideshow/slide12.jpg'
 ];
 
 export default function Home() {
