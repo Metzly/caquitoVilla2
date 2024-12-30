@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 const Slideshow = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,12 +9,18 @@ const Slideshow = ({ images }) => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
-
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setCurrentIndex((currentIndex + 1) % images.length),
+    onSwipedRight: () => setCurrentIndex((currentIndex - 1 + images.length) % images.length),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
-    <div className="relative w-auto h-1/3 md:h-screen overflow-hidden">
+    <div {...handlers} className="relative w-auto h-1/3 md:h-screen overflow-hidden">
       {images.map((image, index) => (
         <div
           key={index}
