@@ -31,10 +31,10 @@ const fetchEvents = async (): Promise<Event[]> => {
   });
 };
 
-
 export default function CalendarPage() {
   const localizer = momentLocalizer(moment);
-  const [events, setEvents] = useState([]);
+  // Asegúrate de especificar el tipo de estado aquí
+  const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
     const getEvents = async () => {
@@ -45,13 +45,13 @@ export default function CalendarPage() {
   }, []);
 
   return (
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        style={{ height: 500 }}
-        views={['month']}
-      />
+    <Calendar
+      localizer={localizer}
+      events={events}
+      startAccessor="start"
+      endAccessor="end"
+      style={{ height: 500 }}
+      views={['month']}
+    />
   );
 }
