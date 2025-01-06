@@ -42,7 +42,7 @@ export default function Home() {
           <h2 className="font-mumbai-sticker text-6xl text-teal-600">Precios</h2>
         </div>
         <PricesSection estadia="DayPass" info="La tarifa por la estadía es de 10,000 DOP por un periodo de 8 horas, desde las 11:00 a.m. hasta las 7:00 p.m. Cada hora adicional tiene un costo de 1,000 DOP. La capacidad máxima es de 15 personas, cada persona adicional tiene un cargo de 500 DOP. Los visitantes no tienen acceso al interior de la casa, solo al exterior (baños, piscina, área social, parrilla)." imgRuta= "/slideshow/slide4.jpg" />
-        <PricesSection estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 10 personas, y los visitantes tienen acceso a todas las áreas de la casa." imgRuta= "/slideshow/slide7.jpg" />
+        <PricesSection estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 8 personas, y los visitantes tienen acceso a todas las áreas de la casa." imgRuta= "/slideshow/slide7.jpg" />
       </div>   
 
       <div id="pricesCel" className="h-screen py-4 mt-44 md:hidden content-center bg-[url('/img/bgPrices.jpg')] bg-cover max-[400px]:mt-52 max-[350px]:mt-56">
@@ -50,7 +50,7 @@ export default function Home() {
           <h2 className="font-mumbai-sticker text-6xl">Precios</h2>
         </div>
         <PricesViewCel estadia="DayPass" info="La tarifa por la estadía es de 10,000 DOP por un periodo de 8 horas, desde las 11:00 a.m. hasta las 7:00 p.m. Cada hora adicional tiene un costo de 1,000 DOP. La capacidad máxima es de 15 personas, cada persona adicional tiene un cargo de 500 DOP. Los visitantes no tienen acceso al interior de la casa, solo al exterior (baños, piscina, área social, parrilla)." />
-        <PricesViewCel estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 10 personas, y los visitantes tienen acceso a todas las áreas de la casa." />
+        <PricesViewCel estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 8 personas, y los visitantes tienen acceso a todas las áreas de la casa." />
       </div> 
 
       <div id="rules" className="my-14 md:mt-20 md:mb-14 text-center content-center px-14">
