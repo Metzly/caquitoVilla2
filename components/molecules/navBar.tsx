@@ -38,7 +38,7 @@ export default function NavBar() {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <Image src="/CaquitoLogoSinFondo.png" width={100} height={50} alt="logo" />
+                            <Image src="/img/CaquitoLogoSinFondo.png" width={100} height={50} alt="logo" />
                         </div>
                     </div>
                     <div className="md:block">

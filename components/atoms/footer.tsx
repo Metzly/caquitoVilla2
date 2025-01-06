@@ -18,7 +18,7 @@ export default function MyFooter() {
 
             <ul className="mb-0">
               <li className="space-x-1">
-                <SocialIcon network="instagram" style={{width: 25, height: 25}} /><a href="https://instagram.com">Instagram</a>
+                <SocialIcon network="instagram" style={{width: 25, height: 25}} /><a href="https://instagram.com/villacaquito/">Instagram</a>
               </li>
             </ul>
           </div>

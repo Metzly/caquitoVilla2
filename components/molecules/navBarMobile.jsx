@@ -41,7 +41,7 @@ export default function NavBarMobile() {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <Image src="/CaquitoLogoSinFondo.png" width={100} height={50} alt="logo" />
+                            <Image src="/img/CaquitoLogoSinFondo.png" width={100} height={50} alt="logo" />
                         </div>
                     </div>
                     <div className="md:block">
@@ -54,8 +54,8 @@ export default function NavBarMobile() {
                 </div>
                 <div id="menulinks" className={`${isMenuOpen ? "block animate__animated animate__fadeIn" : "hidden"}`}>
                     <div className="flex flex-col items-end space-x-4">
-                        <MenuList link="/#info" text="INFORMACIÓN" />
-                        <MenuList link="/#prices" text="PRECIOS" />
+                        <MenuList link="/#infoCel" text="INFORMACIÓN" /> 
+                        <MenuList link="/#pricesCel" text="PRECIOS" />
                         <MenuList link="/#rules" text="REGLAS" />
                         <MenuList link="/calendar" text="FECHAS DISPONIBLES" />
                     </div>

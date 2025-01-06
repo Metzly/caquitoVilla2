@@ -1,10 +1,8 @@
 import Slideshow from "@/components/atoms/carrusel";
 import SubTitle from "@/components/atoms/subTitle";
 import InfoSection from "@/components/molecules/infoSection";
-import NavBar from "@/components/molecules/navBar"
 import PricesSection from "@/components/molecules/pricesSection";
 import PricesViewCel from "@/components/molecules/pricesViewCel";
-import Image from "next/image";
 
 const images = [
   '/slideshow/Caquito.png',
@@ -26,7 +24,9 @@ export default function Home() {
     <div>
       <div className="h-screen content-center md:hidden">
         <Slideshow images={images}/>    
-        <InfoSection />    
+        <div id="infoCel">
+          <InfoSection />
+        </div>    
       </div>
 
       <div className="h-screen content-center hidden md:block">
@@ -41,15 +41,15 @@ export default function Home() {
         <div className="text-center mb-10">
           <h2 className="font-mumbai-sticker text-6xl text-teal-600">Precios</h2>
         </div>
-        <PricesSection estadia="DayPass" info="La tarifa por la estadía es de 10,000 DOP por un periodo de 8 horas, desde las 11:00 a.m. hasta las 7:00 p.m. Cada hora adicional tiene un costo de 1,000 DOP. La capacidad máxima es de 15 personas, cada persona adicional tiene un cargo de 500 DOP. Los visitantes tienen acceso a todas las áreas de la casa (cocina, baños, etc.), con la excepción de las habitaciones." />
-        <PricesSection estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 10 personas, y los visitantes tienen acceso a todas las áreas de la casa." />
+        <PricesSection estadia="DayPass" info="La tarifa por la estadía es de 10,000 DOP por un periodo de 8 horas, desde las 11:00 a.m. hasta las 7:00 p.m. Cada hora adicional tiene un costo de 1,000 DOP. La capacidad máxima es de 15 personas, cada persona adicional tiene un cargo de 500 DOP. Los visitantes no tienen acceso al interior de la casa, solo al exterior (baños, piscina, área social, parrilla)." imgRuta= "/slideshow/slide4.jpg" />
+        <PricesSection estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 10 personas, y los visitantes tienen acceso a todas las áreas de la casa." imgRuta= "/slideshow/slide7.jpg" />
       </div>   
 
-      <div id="prices" className="h-screen py-4 mt-24 md:hidden content-center bg-[url('/bgPrices.jpg')] bg-cover">
+      <div id="pricesCel" className="h-screen py-4 mt-32 md:hidden content-center bg-[url('/img/bgPrices.jpg')] bg-cover max-[400px]:mt-48 max-[350px]:mt-52">
         <div className="text-center mb-10">
-          <h2 className="font-mumbai-sticker text-6xl text-teal-600">Precios</h2>
+          <h2 className="font-mumbai-sticker text-6xl">Precios</h2>
         </div>
-        <PricesViewCel estadia="DayPass" info="La tarifa por la estadía es de 10,000 DOP por un periodo de 8 horas, desde las 11:00 a.m. hasta las 7:00 p.m. Cada hora adicional tiene un costo de 1,000 DOP. La capacidad máxima es de 15 personas, cada persona adicional tiene un cargo de 500 DOP. Los visitantes tienen acceso a todas las áreas de la casa (cocina, baños, etc.), con la excepción de las habitaciones." />
+        <PricesViewCel estadia="DayPass" info="La tarifa por la estadía es de 10,000 DOP por un periodo de 8 horas, desde las 11:00 a.m. hasta las 7:00 p.m. Cada hora adicional tiene un costo de 1,000 DOP. La capacidad máxima es de 15 personas, cada persona adicional tiene un cargo de 500 DOP. Los visitantes no tienen acceso al interior de la casa, solo al exterior (baños, piscina, área social, parrilla)." />
         <PricesViewCel estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 10 personas, y los visitantes tienen acceso a todas las áreas de la casa." />
       </div> 
 
