@@ -45,7 +45,7 @@ export default function Home() {
         <PricesSection estadia="Amanecida (por noche)" info="La tarifa para la estadía nocturna es de 15,000 DOP, desde las 11:00 a.m. hasta las 3:00 p.m. del día siguiente. La capacidad es para 10 personas, y los visitantes tienen acceso a todas las áreas de la casa." imgRuta= "/slideshow/slide7.jpg" />
       </div>   
 
-      <div id="pricesCel" className="h-screen py-4 mt-32 md:hidden content-center bg-[url('/img/bgPrices.jpg')] bg-cover max-[400px]:mt-48 max-[350px]:mt-52">
+      <div id="pricesCel" className="h-screen py-4 mt-40 md:hidden content-center bg-[url('/img/bgPrices.jpg')] bg-cover max-[400px]:mt-48 max-[350px]:mt-52">
         <div className="text-center mb-10">
           <h2 className="font-mumbai-sticker text-6xl">Precios</h2>
         </div>
