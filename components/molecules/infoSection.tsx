@@ -6,7 +6,7 @@ import Slideshow from "../atoms/carrusel"
 
 export default function InfoSection(){
     return(
-        <div className="px-14 text-center md:text-justify md:px-44">
+        <div className="px-14 text-center md:text-justify md:px-44 max-[400px]:px-10 max-[400px]:text-base">
             <div className="flex justify-center">
                 <Image src="/img/logo_villa.png" width={400} height={150} alt="logo" />
             </div>
